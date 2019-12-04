@@ -2,5 +2,8 @@ FROM tomcat
 
 RUN apt-get update
 
-COPY WebApp.war /usr/local/tomcat/webapps/
+RUN mkdir -p /opt/tomcat
+ENV PROJECT_HOME /opt/tomcat
+
+COPY /var/lib/jenkins/workspace/tomcat/target/WebApp.war $PROJECT_HOME/
 
