@@ -19,7 +19,6 @@ spec:
         image: poc2cap/poc2application
         ports:
         - containerPort: 8080
-		
 kind: Service
 apiVersion: v1
 metadata:
