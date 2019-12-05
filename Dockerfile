@@ -7,6 +7,8 @@ ENV PROJECT_HOME /opt/tomcat
 
 COPY target/WebApp.war $PROJECT_HOME/
 
+WORKDIR $PROJECT_HOME
+
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
 
