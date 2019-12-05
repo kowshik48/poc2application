@@ -10,6 +10,5 @@ COPY target/WebApp.war $PROJECT_HOME/
 WORKDIR $PROJECT_HOME
 
 EXPOSE 8080
-RUN service tomcat8 start
 
 
